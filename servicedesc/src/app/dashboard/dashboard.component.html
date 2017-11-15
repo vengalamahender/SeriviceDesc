@@ -1,0 +1,38 @@
+<h1>All Stores Details</h1>
+<div class="newform">
+
+<!-- <input type="button" name="" value="Add New Store"> -->
+<input class="btn btn-success" type="submit" name="submit_reg" value="Add New Store" 
+(click)="goSearch()"><a routerLink="/new--store-form"></a>
+	
+</div>
+
+<!-- <ul class="nav nav-pills nav-stacked">
+  <li *ngFor="let store of stores"><a>{{store.firstName}}</a></li>
+</ul>
+ -->
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Username</th>
+      <th scope="col">Email</th>
+      <th scope="col">Mobile Number</th>
+      <th scope="col">Address</th>
+      <th scope="col">Services</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let store of stores">
+      <th scope="row">{{ $index + 1 }}</th>
+      <td>{{store.firstName}}</td>
+      <td>{{store.email}}</td>
+      <td>{{store.contactnumber}}</td>
+      <td>{{store.city}}</td>
+      <td>{{store.services}}</td>
+      <td>x</td>
+    </tr>
+  </tbody>
+</table>
+

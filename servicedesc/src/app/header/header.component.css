@@ -1,0 +1,16 @@
+.navbar-light .navbar-brand{
+align-content: center;
+	text-align: center;
+	font-size: 30px;
+	text-align: right;
+	color: white;
+}
+.bg-light1{
+	background-color: blue;
+}
+.nav-link{
+	color: white;
+}
+a:not([href]):not([tabindex]){
+	color: white;
+}

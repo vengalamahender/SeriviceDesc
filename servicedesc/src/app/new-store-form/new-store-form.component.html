@@ -1,0 +1,92 @@
+<div class="container">
+        <div class="row centered-form">
+        <div class="col-md-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                        <h3 class="panel-title">New Store Registration Form</h3>
+                        </div>
+                        <div class="panel-body">
+                        <form role="form" #store="ngForm" (ngSubmit)="RegisterUser(store.value)">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                        <input type="text" name="firstName" #firstName="ngModel" ngModel class="form-control input-sm" placeholder="firstName"/>
+                          <!--   <input type="text" [(ngModel)]="first[(ngModel)]" id="first_[(ngModel)]" class="form-control input-sm" placeholder="First Name"> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                            <input type="text" name="lastName" #lastName="ngModel" ngModel class="form-control input-sm" placeholder="lastName"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                 <input type="text" name="email" #email="ngModel" ngModel class="form-control input-sm" placeholder="email"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                             <input type="text" name="contactnumber" #contactnumber="ngModel" ngModel class="form-control input-sm" placeholder="contactnumber"/>
+                                    </div>
+                                </div>
+                            </div>
+                          <div class="row">
+                                <div class="col-md-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+        <input type="password" name="password" #password="ngModel" ngModel class="form-control input-sm" placeholder="password"/> 
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+    <input type="text" name="services" #services="ngModel" ngModel class="form-control input-sm" placeholder="services"/> 
+
+                                    </div>
+                                </div>
+                         </div>
+                        <div class="row">
+                                <div class="col-md-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+        <input type="text" name="doornumber" #doornumber="ngModel" ngModel class="form-control input-sm" placeholder="doornumber"/> 
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+          <input type="text" name="street" #street="ngModel" ngModel placeholder="Street"class="form-control input-sm"/>    
+                                    </div>
+                                </div>
+                         </div>
+                        <div class="row">
+                                <div class="col-md-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="city" #city="ngModel" ngModel class="form-control input-sm" placeholder="City">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="country" #country="ngModel" ngModel class="form-control input-sm" placeholder="Country">
+                                    </div>
+                                </div>
+                         </div>
+                        <div class="row">
+                                <div class="col-md-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="state" #state="ngModel" ngModel class="form-control input-sm" placeholder="State">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="pincode" #pincode="ngModel" ngModel class="form-control input-sm" placeholder="Pincode">
+                                    </div>
+                                </div>
+                         </div>
+                            <input type="submit" value="Register" class="btn btn-info btn-block">
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
